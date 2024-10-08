@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Area Calculator</h1>
+        <form id="areaForm">
+            <label for="shape">Shape:</label>
+            <select id="shape" name="shape">
+                <option value="triangle">Triangle</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="circle">Circle</option>
+            </select>
+
+            <label for="input1">Base(Triangle/Rectangle) or Radius (Circle):</label>
+            <input type="number" id="input1" name="input1" placeholder="Enter value" required>
+
+            <label for="input2">Height(Triangle) or Width (Rectangle):</label>
+            <input type="number" id="input2" name="input2" placeholder="Enter value" required>
+
+            <div class="result">
+                <h2>Area: <span id="areaResult">0</span> square units</h2>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
